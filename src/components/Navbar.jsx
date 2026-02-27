@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className="logo-icon">
             <FaPlay />
           </div>
-          <span className="logo-text">MusicPlayer</span>
+          <span className="logo-text">Audiora</span>
         </Link>
       </div>
 
