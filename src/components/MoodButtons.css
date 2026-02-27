@@ -1,0 +1,41 @@
+.mood-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mood-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 24px;
+  border: 1px solid var(--mood-border);
+  background: var(--mood-bg);
+  color: var(--mood-color);
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.mood-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.15);
+}
+
+.mood-btn.active {
+  background: var(--mood-color);
+  color: white;
+  border-color: var(--mood-color);
+  box-shadow: 0 0 16px var(--mood-color), 0 4px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.mood-emoji {
+  font-size: 16px;
+  line-height: 1;
+}
